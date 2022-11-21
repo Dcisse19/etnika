@@ -29,9 +29,9 @@ body {
 
 /* on met des borders aux boites qu'on efface ensuite pour voir où se placent les sections */
 
-/* div, section, main, header, nav {
+div, section, main, header, nav {
     border : 1px solid black;
-} */
+}
 
 .flex {
     /* clesse globale pour metrre en flex, à ajouter dans le html*/
@@ -53,6 +53,24 @@ button {
     border: none;
     background-color: var(--color-white);
 }
+
+/* ----- FONTS ------- */
+h1{
+    font-size: clamp(28px,3vw,40px);
+}
+
+h2{
+    font-size: clamp(22px,3vw,30px);
+}
+h3{
+    font-size: clamp(15px,3vw,18px);
+}
+
+p{
+    font-size: clamp(13px,3vw,15px);
+    line-height: 22px;
+}
+
 
 /* HEADER */
 
@@ -109,8 +127,7 @@ main {
     gap: 20px;
 }
 
-.fa-user,
-.fa-cart-shopping {}
+
 
 header hr {
     margin-top: 5px;
@@ -140,7 +157,7 @@ header hr {
 .garanty-box {
     width: min(300px, 100%);
     text-align: center;
-    gap: 10px;
+    gap: 15px;
     color: var(--color-dark_grey);
 }
 
@@ -152,7 +169,88 @@ header hr {
     font-weight: 500;
 }
 
-/* MEDIA QUERIES */
+/* ------------ FOOTER ------------- */
+footer{
+    padding: 100px;
+    background-color: var(--color-extra_light_grey);
+    gap: 80px;
+}
+
+
+.footer-one{
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 50px;
+} 
+
+.footer-links{
+    width: min(310px,100%);
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.footer-links a{
+    text-transform: none;
+    font-size: clamp(13px,3vw,16px);
+}
+
+.newsletter{
+    width: min(550px,100%);
+    text-align: center;
+    gap: 20px;
+}
+
+.newsletter h3{
+    text-transform: uppercase;
+    font-size: clamp(18px,3vw,24px);
+}
+
+.newsletter-form{
+    width: min(350px,100%);
+    gap: 13px;
+}
+.newsletter-form input{
+    width: 100%;
+    border: 2px solid var(--color-red);
+    padding: 10px;
+}
+
+::placeholder {
+    font-size: medium;
+}
+
+.submit-button{
+    background-color: var(--color-red);
+    color: white;
+    padding: 2px 6px;
+}
+
+.social-medias{
+    text-align: center;
+    gap: 40px;
+}
+.social-medias .fa-brands{
+    font-size: 50px;
+}
+
+.payment-methods{
+    width: 300px;
+}
+
+.up{
+    gap: 5px;
+}
+/*================ MEDIA QUERIES ====================== */
+@media (max-width: 1000px) {
+/* ------- FOOTER  ------ */
+
+footer{
+    padding: 30px;
+}
+}
+
 @media (max-width: 750px) {
 
     /* HEADER */
@@ -220,6 +318,25 @@ header hr {
 
     .burger.open .burger-bar--bottom {
         transform: rotate(-45deg);
-    }
+    }    
 
+        /* ---------FOOTER ------ */
+        .footer-one{
+            flex-direction: column;
+            align-items: center;
+        }
+}
+
+@media (max-width: 550px){
+    /* ------------ FOOTER ------------- */
+footer{
+    padding: 30px;
+}
+.social-medias .fa-brands{
+    font-size: 40px;
+}
+
+.payment-methods{
+    width: 250px;
+}
 }
