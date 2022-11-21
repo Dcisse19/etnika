@@ -29,9 +29,9 @@ body {
 
 /* on met des borders aux boites qu'on efface ensuite pour voir où se placent les sections */
 
-div, section, main, header, nav {
+/* div, section, main, header, nav {
     border : 1px solid black;
-}
+} */
 
 .flex {
     /* clesse globale pour metrre en flex, à ajouter dans le html*/
@@ -83,6 +83,7 @@ header {
 nav a {
     text-transform: uppercase;
     font-weight: 400;
+    font-size: clamp(13px,3vw,17px);
 }
 
 nav a:hover {
@@ -108,16 +109,16 @@ main {
 
 .search-bar {
     align-self: flex-end;
-    gap: 10px;
+    gap: 8px;
+}
+
+.search-bar form{
+    gap: 100px;
 }
 
 .search-bar p {
     color: #504F4F;
     font-size: 12px;
-}
-
-.search-bar div {
-    gap: 100px;
 }
 
 .header-icons {
@@ -129,14 +130,15 @@ main {
 
 
 
-header hr {
-    margin-top: 5px;
+.hr-one, .hr-two {
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 
-.hr-one {
-    box-shadow: 0 20px 20px -20px #333;
-}
+.hr-two {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8c8c inset;}
 
 /* -------HEADER 2----------- */
 
