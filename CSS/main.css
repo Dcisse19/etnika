@@ -1,0 +1,104 @@
+/* ------ CSS Global ------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;  /* Les images vont toujours faire la taille importé, si elle ne peuvent plus, elles s'adaptent à la fenêtre*/
+    display: block; /* car images hybrides entre block et inline*/
+}
+
+:root{   /* variables*/
+    --color-red: #882404;
+    --color-white: #FFFFFF;
+    --color-light_grey: #EEEEEE;
+    --color-dark_grey: #232323;
+    --color-beige: #D7C4AB;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* on met des borders aux boites qu'on efface ensuite pour voir où se placent les sections */ 
+
+/* div, section, main, header, nav {
+    border : 1px solid black;
+} */
+
+.flex {  /* clesse globale pour metrre en flex, à ajouter dans le html*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: none;
+    background-color: var(--color-white);
+}
+
+/* HEADER */
+
+header {
+    width: min(1400px, 95%);
+    margin: 0px auto 0px; /* le auto le centre */
+}
+/* MAIN  */
+
+main {
+    width: min(1195px, 90%);
+    margin: 20px auto 100px; /* le auto le centre */
+}
+
+/* HEADER 1 */
+
+.search-bar {
+    align-self: flex-end;
+    gap: 10px;
+    color: #504F4F;
+}
+.search-bar p{
+    font-size: 12px;
+}
+.search-bar div {
+    gap: 100px;
+}
+
+.header-icons{
+    align-self: flex-end;
+    font-size: x-large;
+    color: var(--color-dark_grey);
+    gap: 20px;
+}
+
+.fa-user, .fa-cart-shopping{
+}
+
+header hr{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* HEADER 2 */
+
+
+#header-two{
+    text-transform: uppercase;
+    justify-content: center;
+    gap: 100px;
+}
+
+.hr-two{
+}
