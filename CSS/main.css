@@ -5,15 +5,19 @@
     box-sizing: border-box;
 }
 
-img{
-    max-width: 100%;  /* Les images vont toujours faire la taille importé, si elle ne peuvent plus, elles s'adaptent à la fenêtre*/
-    display: block; /* car images hybrides entre block et inline*/
+img {
+    max-width: 100%;
+    /* Les images vont toujours faire la taille importé, si elle ne peuvent plus, elles s'adaptent à la fenêtre*/
+    display: block;
+    /* car images hybrides entre block et inline*/
 }
 
-:root{   /* variables*/
+:root {
+    /* variables*/
     --color-red: #882404;
     --color-white: #FFFFFF;
     --color-light_grey: #EEEEEE;
+    --color-extra_light_grey: #F5F5F5;
     --color-dark_grey: #232323;
     --color-beige: #D7C4AB;
 }
@@ -23,13 +27,14 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* on met des borders aux boites qu'on efface ensuite pour voir où se placent les sections */ 
+/* on met des borders aux boites qu'on efface ensuite pour voir où se placent les sections */
 
 /* div, section, main, header, nav {
     border : 1px solid black;
 } */
 
-.flex {  /* clesse globale pour metrre en flex, à ajouter dans le html*/
+.flex {
+    /* clesse globale pour metrre en flex, à ajouter dans le html*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +44,7 @@ body {
     flex-direction: column;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -52,53 +57,169 @@ button {
 /* HEADER */
 
 header {
-    width: min(1400px, 95%);
-    margin: 0px auto 0px; /* le auto le centre */
+    width: min(1400px, 100%);
+    margin: 0px auto 0px;
+    /* le auto le centre */
 }
+
+nav a {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: var(--color-red);
+}
+
 /* MAIN  */
 
 main {
     width: min(1195px, 90%);
-    margin: 20px auto 100px; /* le auto le centre */
+    margin: 20px auto 100px;
+    /* le auto le centre */
 }
 
 /* HEADER 1 */
+#header-one {
+    width: 95%;
+}
+
+.navbar-mobile {
+    display: none;
+}
 
 .search-bar {
     align-self: flex-end;
     gap: 10px;
-    color: #504F4F;
 }
-.search-bar p{
+
+.search-bar p {
+    color: #504F4F;
     font-size: 12px;
 }
+
 .search-bar div {
     gap: 100px;
 }
 
-.header-icons{
+.header-icons {
     align-self: flex-end;
     font-size: x-large;
     color: var(--color-dark_grey);
     gap: 20px;
 }
 
-.fa-user, .fa-cart-shopping{
-}
+.fa-user,
+.fa-cart-shopping {}
 
-header hr{
+header hr {
     margin-top: 5px;
     margin-bottom: 20px;
 }
 
-/* HEADER 2 */
+.hr-one {
+    box-shadow: 0 20px 20px -20px #333;
+}
 
+/* -------HEADER 2----------- */
 
-#header-two{
-    text-transform: uppercase;
+#header-two {
     justify-content: center;
     gap: 100px;
 }
 
-.hr-two{
+/* --------- PRE-FOOTER / GARANTIES --------- */
+#pre-footer{
+    background: var(--color-light_grey);
+    padding: 50px;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.garanty-box {
+    width: min(300px, 100%);
+    text-align: center;
+    gap: 10px;
+    color: var(--color-dark_grey);
+}
+
+.garanty-box i{
+    font-size: xx-large;
+}
+.garanty-box h3{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 750px) {
+
+    /* HEADER */
+
+    /* en dessous et = à 750px*/
+    #header-two,
+    .search-bar,
+    .hr-two {
+        display: none;
+    }
+
+    .hr-one {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .navbar-mobile {
+        padding: 30px 0px;
+        display: none;
+        gap: 25px;
+        background-color: var(--color-beige);
+    }
+
+
+    /* ---- Header burger menu ------ */
+    .burger {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .burger-bar {
+        width: 30px;
+        height: 5px;
+        background: var(--color-dark_grey);
+        border-radius: 5px;
+    }
+
+    .burger-bar--top,
+    .burger-bar--bottom {
+        content: "";
+        position: absolute;
+    }
+
+    .burger-bar--top {
+        transform: translateY(-12px);
+    }
+
+    .burger-bar--bottom {
+        transform: translateY(12px);
+    }
+
+    /* ANIMATION BURGER */
+    .burger.open .burger-bar--top {
+        background: transparent;
+    }
+
+    .burger.open .burger-bar--middle {
+        transform: rotate(45deg);
+    }
+
+    .burger.open .burger-bar--bottom {
+        transform: rotate(-45deg);
+    }
+
 }
