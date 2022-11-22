@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="./CSS/main.css">
+        <link rel="stylesheet" href="./CSS/panier.css">
+        <title>Etnika</title>
+    </head>
+    
+    <body>
+    
+        <!-- ------ HEADER -------- -->
+        <!-- à copier sur chaque fichier html avec le fichier main.css -->
+        <header>
+            <!-- HEADER 1 -->
+            <div id="header-one" class="flex">
+                <img src="./Images/logo_etnika.png" alt="logo_etnika">
+                <div class="search-bar" class="flex column">
+                    <form class="flex">
+                        <p>Rechercher un article</p>
+                        <button>
+                            <i class="fas fa-regular fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <hr>
+                </div>
+                <div class="header-icons flex">
+                    <i class="fas fa-light fa-user"></i>
+                    <i class="fas fa-light fa-cart-shopping"></i>
+                    <div class="burger">
+                        <span class="burger-bar burger-bar--top"></span>
+                        <span class="burger-bar burger-bar--middle"></span>
+                        <span class="burger-bar burger-bar--bottom"></span>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-one">
+            <nav class="navbar-mobile flex column">
+                <a href="./index.html">Accueil</a>
+                <a href="#">Boutique</a>
+                <a href="./categories.html">Catégories</a>
+                <a href="#">A propos</a>
+            </nav>
+            <!-- HEADER 2 -->
+            <nav id="header-two" class="flex">
+                <a href="./index.html">Accueil</a>
+                <a href="#">Boutique</a>
+                <a href="./categories.html">Catégories</a>
+                <a href="#">A propos</a>
+            </nav>
+            <hr class="hr-two">
+        </header>
+    
+<!--------------------Accueil------------------------->
+<main>
+
+    <div class=" bar flex">
+    <img src="././Images/Progress bar.png" alt="bar de commande">
+</div>
+    <div class="achat">
+        <i class="fa-solid fa-caret-left"></i>
+        <h3>continuer mes achats</h3>
+       </div>
+
+   </div>
+   <div class="article ">
+    <img src="././Images/sari.png" alt="photo de sari">
+    
+    <div class="detail">
+        <h2>Sari de cérémonie</h2>
+        <ul  type="none">
+        <li>Origine : Inde</li>
+        <li>Couleur:</li>
+        <li>127,95€</li>
+        <li>Taille : 3m de longueur</li>
+        <div class=" elements flex">
+        <div class=" element flex">
+        <li><i class="fa-sharp fa-solid fa-heart"></i></li>
+            <li>Ajouter au favoris</li>
+        </div>
+        <div class="element flex">
+        <li><i class="fas fa-regular fa-trash"></i></li>
+        <li>Retirer du panier</li></div></div>
+    </ul>
+    </div>
+   </div>
+   <div class="article ">
+    <img src="././Images/sari.png" alt="photo de sari">
+    
+    <div class="detail">
+        <h2>Sari de cérémonie</h2>
+        <ul  type="none">
+        <li>Origine : Inde</li>
+        <li>Couleur:</li>
+        <li>127,95€</li>
+        <li>Taille : 3m de longueur</li>
+        <div class=" elements flex">
+        <div class=" element flex">
+        <li><i class="fa-sharp fa-solid fa-heart"></i></li>
+            <li>Ajouter au favoris</li>
+        </div>
+        <div class="element flex">
+        <li><i class="fas fa-regular fa-trash"></i></li>
+        <li>Retirer du panier</li></div></div>
+    </ul>
+    </div>
+   </div>
+   <div class="livraison">
+    <h4>LIVRAISON</h4>
+    <p>Vous pourrez modifier votre choix à l’etape suivante.
+        Les dates affichés sont des estimations.</p>
+        <div class="flex">
+            <ul type="none" class=" groupe1 flex">
+                <div>
+                    <input type="radio" id="domicile" name="bouton" value="A Domicile">
+                    <label for="domicile">A Domicile</label>
+                  </div>
+            <li>48h (Mardi  le 22 novombre)</li>
+            <li>5.90</li>
+        </ul>
+        </div>
+        <hr>
+        <div class=" flex">
+            <ul type="none" class=" groupe2 flex">
+                <div>
+                    <input type="radio" id="point-r" name="point-r" value="point-relais">
+                    <label for="point-r">Point Relais</label>
+                  </div>
+            <li>72h (Mercredi le 23 nobombre)</li>
+            <li>3.50</li>
+        </ul>
+        </div>
+   </div>
+   <div>
+    <ul class=" liste2 flex column" type="none">
+        <p><span>Total HT :</span>   255,90€</p>
+        <p><span>TVA:</span>    10,16€</p>
+        <p><span>Total TTC :</span>   266,06€</p>
+        <p><span>pvraison :</span>   Gratuit</p>
+        <hr>
+        <p><span>Total: </span>  266,06€</p>
+        <p>Payez en 3x ou 4x sans frais dès 150€ d’acahat</p>
+        <button>
+            <a href="./payment.html" >Valider la COMMANDE</a>
+        </button>
+
+    </ul>
+   </div>
+   <div class="condition flex column">
+    <div class="flex">
+    <i class="fas fa-light fa-check"></i>
+   <p>Paiement securisé</p> 
+</div>
+    <div class="flex">
+   <i class="fas fa-light fa-check"></i>
+   <p>Paiement en 3x ou 4x sans frais dés 150e d’achat</p>
+</div>
+    <div class="flex">
+   <i class="fas fa-light fa-check"></i>
+   <p>Livraison offerte dés 100e d’achat </p>
+</div>
+    <div class="flex">
+   <i class="fas fa-light fa-check"></i>
+   <p>Retour gratuit sous 30 jours</p>
+</div>
+   </div>
+</main>
+<!------------------PRE-FOOTER-------------------->
+<section id="pre-footer" class="flex">
+    <div class="garanty-box flex column">
+        <i class="fas fa-light fa-truck-fast"></i>
+        <h3>expédition rapide</h3>
+        <p>Après avoir passé commande, l'expédition de votre commande se fait sous 2 à 3 jours ouvrés</p>
+    </div>
+    <div class="garanty-box flex column">
+        <i class="fas fa-light fa-headset"></i>
+        <h3>service client</h3>
+        <p>Notre service client est à votre écoute 5 jours sur 7 pour toute demande d'information</p>
+    </div>
+    <div class="garanty-box flex column">
+        <i class="fas fa-light fa-credit-card"></i>
+        <h3>paiement sécurisé</h3>
+        <p>Le paiement de votre commande est sécurisé</p>
+    </div>
+</section>
+
+<footer class="flex column">
+    <div class="footer-one flex">
+        <nav class="footer-links flex column">
+            <a href="#">Nous contacter</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Conditions générales d'utilisation</a>
+            <a href="#">Conditions générales de vente</a>
+            <a href="#">Service client</a>
+        </nav>
+        <div class="newsletter flex column">
+            <h3>Newsletter</h3>
+            <p>Inscrivez-vous à notre newsletter pour recevoir toutes les informations et les bons plans par mail
+            </p>
+            <form class="newsletter-form flex column" action="">
+                <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input class="submit-button" type="submit" value="Je m'inscris">
+            </form>
+        </div>
+    </div>
+    <div class="social-medias flex">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+    </div>
+    <img class="payment-methods" src="./Images/Moyens de paiement.png" alt="payment-methods">
+    <div class="up flex">
+        <p>Retour en haut</p>
+        <i class="fas fa-light fa-arrow-up"></i>
+    </div>
+
+</footer>
+
+<script src="./JS/main.js"></script>      
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/categorie.css">
+    <title>Etnika</title>
+</head>
+
+<body>
+
+    <!-- ------ HEADER -------- -->
+    <!-- à copier sur chaque fichier html avec le fichier main.css -->
+    <header>
+        <!-- HEADER 1 -->
+        <div id="header-one" class="flex">
+            <img src="./Images/logo_etnika.png" alt="logo_etnika">
+            <div class="search-bar" class="flex column">
+                <form class="flex">
+                    <p>Rechercher un article</p>
+                    <button>
+                        <i class="fas fa-regular fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <hr>
+            </div>
+            <div class="header-icons flex">
+                <i class="fas fa-light fa-user"></i>
+                <i class="fas fa-light fa-cart-shopping"></i>
+                <div class="burger">
+                    <span class="burger-bar burger-bar--top"></span>
+                    <span class="burger-bar burger-bar--middle"></span>
+                    <span class="burger-bar burger-bar--bottom"></span>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-one">
+        <nav class="navbar-mobile flex column">
+            <a href="./index.html">Accueil</a>
+            <a href="#">Boutique</a>
+            <a href="./categories.html">Catégories</a>
+            <a href="#">A propos</a>
+        </nav>
+        <!-- HEADER 2 -->
+        <nav id="header-two" class="flex">
+            <a href="./index.html">Accueil</a>
+            <a href="#">Boutique</a>
+            <a href="./categories.html">Catégories</a>
+            <a href="#">A propos</a>
+        </nav>
+        <hr class="hr-two">
+    </header>
+
+        <!-- MAIN -->
+
+        <main>
+
+            <!-- scroll bar -->
+
+            <div class="scroll1">
+                <h3 id="1">1</h3>
+                <div class="scroll2">
+                </div>
+                <h3 id="2">2</h3>
+                <div class="scroll3">
+                </div>
+                <div id="3">3</div>
+            </div>
+
+            <!-- continuer mes achats -->
+
+            <div>
+                <a href="#"> continuer mes achats </a>
+            </div>
+
+            <!-- MAIN BODY -->
+
+            <!-- NOMBRE D'ARTICLES -->
+
+            <div class="separator-p"> 2 articles
+            </div>
+
+            <!-- MAIN BOX -->
+
+            <!-- FORM -->
+
+            <section class="pay flex">
+
+                <div class="carte-info">
+                    <form action="" class="info flex">Carte bancaire
+                        <input type="text" placeholder="">
+                </div>
+
+                <br>
+
+                <div class="carte-date">
+
+                    <select name="date1" id="date1">
+                        <option value="">Mois</option>
+                        <option value="">janvier</option>
+                        <option value="">février</option>
+                        <option value="">mars</option>
+                        <option value="">avril</option>
+                        <option value="">mai</option>
+                        <option value="">juin</option>
+                        <option value="">juillet</option>
+                        <option value="">août</option>
+                        <option value="">septembre</option>
+                        <option value="">octobre</option>
+                        <option value="">novembre</option>
+                        <option value="">décembre</option>
+                    </select>
+
+                    <select name="date2" id="date2">
+                        <option value="">Année</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+                        <option value="">2024</option>
+                        <option value="">2025</option>
+                        <option value="">2026</option>
+                        <option value="">2027</option>
+                        <option value="">2028</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="carte-code">
+
+                    <form action="" class="info flex">Code de vérification
+                        <input type="text" placeholder="">
+                </div>
+                <a href="#">Que-ce que c’est?</a>
+
+                <br>
+
+                <div class="excute-y">
+                    <form action="" class="info flex">
+                        <input type="text" placeholder="Valider">
+                        <input type="text" placeholder="Annuller">
+                </div>
+            </form>
+            <div class="total">
+                <p><b>Total HT :</b>   255,90€</p>
+                <p><b>TVA :</b>   10,16€</p>
+                <p><b>Total TTC :</b>   266,06€</p>
+                <p><b>Livraison :</b>   Gratuit</p>
+                <hr>
+                <p><b>Total:</b>   266,06€</p>
+            </div>
+
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <section id="pre-footer" class="flex">
+            <div class="garanty-box flex column">
+                <i class="fas fa-light fa-truck-fast"></i>
+                <h3>expédition rapide</h3>
+                <p>Après avoir passé commande, l'expédition de votre commande se fait sous 2 à 3 jours ouvrés</p>
+            </div>
+            <div class="garanty-box flex column">
+                <i class="fas fa-light fa-headset"></i>
+                <h3>service client</h3>
+                <p>Notre service client est à votre écoute 5 jours sur 7 pour toute demande d'information</p>
+            </div>
+            <div class="garanty-box flex column">
+                <i class="fas fa-light fa-credit-card"></i>
+                <h3>paiement sécurisé</h3>
+                <p>Le paiement de votre commande est sécurisé</p>
+            </div>
+        </section>
+    
+        <footer class="flex column">
+            <div class="footer-one flex">
+                <nav class="footer-links flex column">
+                    <a href="#">Nous contacter</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Conditions générales d'utilisation</a>
+                    <a href="#">Conditions générales de vente</a>
+                    <a href="#">Service client</a>
+                </nav>
+                <div class="newsletter flex column">
+                    <h3>Newsletter</h3>
+                    <p>Inscrivez-vous à notre newsletter pour recevoir toutes les informations et les bons plans par mail
+                    </p>
+                    <form class="newsletter-form flex column" action="">
+                        <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <input class="submit-button" type="submit" value="Je m'inscris">
+                    </form>
+                </div>
+            </div>
+            <div class="social-medias flex">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+            </div>
+            <img class="payment-methods" src="./Images/Moyens de paiement.png" alt="payment-methods">
+            <div class="up flex">
+                <p>Retour en haut</p>
+                <i class="fas fa-light fa-arrow-up"></i>
+            </div>
+    
+        </footer>
+    
+        <script src="./JS/main.js"></script>
+    </body>
+
+</html>

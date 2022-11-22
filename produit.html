@@ -19,7 +19,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/main.css">
-    <link rel="stylesheet" href="./CSS/accueil copy.css">
+    <link rel="stylesheet" href="./CSS/produit.css">
     <title>Etnika</title>
 </head>
 
@@ -54,7 +54,7 @@
         <nav class="navbar-mobile flex column">
             <a href="./index.html">Accueil</a>
             <a href="#">Boutique</a>
-            <a href="./categories.html">Catégories</a>
+            <a href="#">Catégories</a>
             <a href="#">A propos</a>
         </nav>
         <!-- HEADER 2 -->
@@ -68,94 +68,66 @@
     </header>
     <!-- MAIN -->
     <main>
-
-        <!-- BANNER -->
-        <section class="main-grid">
-            <div class="banner flex">
-                <div class="banner-carousel flex">
-                    <img class="left-arrow" src="./Images/arrow-left.png" alt="left-arrow">
-                    <img class="carousel-image" src="./Images/sari_white_banner.png" alt="woman with white sari">
-                    <img class="right-arrow" src="./Images/arrow-right.png" alt="right-arrow">
+        <section id="product" class="flex">
+            <div class="product-pictures flex">
+                <div class="sub-pictures flex column">
+                    <img src="./Images/product_sari_2.png" alt="woman sari">
+                    <img src="./Images/product_sari_3.png" alt="woman sari">
                 </div>
-                <div class="banner-text flex column">
-                    <h1>Etnika,</h1>
-                    <h2>Des tenues traditionnelles de toutes les régions du monde</h2>
+                <img class="main-picture" src="./Images/product_sari_1.png" alt="woman sari 3">
+            </div>
+            <div class="product-details flex column">
+                <h2>Sari de cérémonie</h2>
+                <p>Origine : Inde</p>
+                <p>Couleur :</p>
+                <div class="colors flex">
+                    <div class="color color1"></div>
+                    <div class="color color2"></div>
+                    <div class="color color3"></div>
                 </div>
-            </div>
-            <!-- AFRICA -->
-            <div class="flex column region africa">
-                <h3>L'afrique</h3>
-                <a href="#">Je découvre</a>
-            </div>
-            <div class="flex column region america">
-                <h3>L'amérique du sud</h3>
-                <a href="#">Je découvre</a>
-            </div>
-            <div class="flex column region value">
-                <h3>Une qualité garantie</h3>
-                <i class="fa-solid fa-star"></i>
-                <p>Nos tenues sont cousues-main directement dans les régions choisies.</p>
-            </div>
-            <div class="flex column region asia">
-                <h3>L'asie</h3>
-                <a href="./categorie.html">Je découvre</a>
-            </div>
-            <div class="flex column region europe">
-                <h3>L'europe</h3>
-                <a href="#">Je découvre</a>
-            </div>
-            <div class="flex column region value">
-                <h3>Un prix abordable</h3>
-                <i class="fa-solid fa-euro-sign"></i>
-                <p>Obtenez un très bon rapport qualité-prix à un prix abordable</p>
+                <p>Taille : 3m de longueur</p>
+                <p class="price">127,95€</p>
+                <div class="product-description">
+                    <p>Description :</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum qui optio eum, quaerat nisi enim
+                        ratione nesciunt voluptates accusamus.</p>
+                </div>
+                <div class="product-entretien">
+                    <p>Entretien :</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum qui optio eum, quaerat nisi enim
+                        ratione nesciunt voluptates accusamus.</p>
+                </div>
+                <a class="btn add-to-cart" href="./panier.html">Ajouter au panier</a>
             </div>
         </section>
-
-        <!-- ------ AVIS CLIENTS --------- -->
-        <section id="testimonies" class="flex column">
-            <h3>Nos avis clients</h3>
-            <div class="testimonies-main flex">
-                <img class="" src="./Images/arrow-left.png" alt="left-arrow">
-                <div class="testimony-box flex column">
-                    <i class="colorRed fa-sharp fa-solid fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quae accusamus nobis voluptatibus
-                        dolor iure a inventore? Ipsa nihil mollitia repudiandae, aliquam dolorum non similique
-                        architecto ea
-                        fuga porro esse.</p>
-                    <hr>
-                    <div class="testimoner flex">
-                        <p> SACHA, passionnée par la culture asiatique</p>
-                        <img src="./Images/avatar-one.png" alt="black woman">
-
-                    </div>
+        <hr>
+        <section id="same-products" class="flex column">
+            <h3>Articles de la même région</h3>
+            <div class="same-products_main flex">
+                <div class="same-product-box flex column">
+                    <img src="./Images/sari_white_banner.png" alt="white sari">
+                    <p>Sari quotidien</p>
+                    <p class="price">127,95€</p>
                 </div>
-                <div class="testimony-box main-testimony flex column">
-                    <i class="colorRed fa-sharp fa-solid fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quae accusamus nobis voluptatibus
-                        dolor iure a inventore? Ipsa nihil mollitia repudiandae, aliquam dolorum non similique
-                        architecto ea
-                        fuga porro esse.</p>
-                    <hr>
-                    <div class="testimoner flex">
-                        <p> SACHA, passionnée par la culture asiatique</p>
-                        <img src="./Images/avatar-one.png" alt="black woman">
-                    </div>
+                <div class="same-product-box flex column">
+                    <img src="./Images/sari_white_banner.png" alt="white sari">
+                    <p>Sari quotidien</p>
+                    <p class="price">127,95€</p>
                 </div>
-                <div class="testimony-box flex column">
-                    <i class="colorRed fa-sharp fa-solid fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quae accusamus nobis voluptatibus
-                        dolor iure a inventore? Ipsa nihil mollitia repudiandae, aliquam dolorum non similique
-                        architecto ea
-                        fuga porro esse.</p>
-                    <hr>
-                    <div class="testimoner flex">
-                        <p> SACHA, passionnée par la culture asiatique</p>
-                        <img src="./Images/avatar-one.png" alt="black woman">
-                    </div>
+                <div class="same-product-box flex column">
+                    <img src="./Images/sari_white_banner.png" alt="white sari">
+                    <p>Sari quotidien</p>
+                    <p class="price">127,95€</p>
                 </div>
-                <img class="" src="./Images/arrow-right.png" alt="right-arrow">
+                <div class="same-product-box flex column">
+                    <img src="./Images/sari_white_banner.png" alt="white sari">
+                    <p>Sari quotidien</p>
+                    <p class="price">127,95€</p>
+                </div>
             </div>
+            <a class="btn" href="#">Voir plus</a>
         </section>
+
     </main>
 
 
