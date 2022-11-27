@@ -23,13 +23,20 @@ padding-bottom:50px;
 .categories-contenu button{
    /* position: absolute;*/
        background-color: var(--color-beige);
+       letter-spacing: 1px;
     font-weight: bold;
     /*bottom: 35px; */
     padding: 15px 30px;
-    transform: translateY(-46px);
+    transform: translateY(-45px);
 
 }
 
+.categories-contenu button:hover{
+    background-color: var(--color-red);
+}
+.categories-contenu a:hover{
+    color: white;
+}
 
 @media (max-width: 550px){
 

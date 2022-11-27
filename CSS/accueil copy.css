@@ -5,15 +5,14 @@
 
 
 .main-grid img{
-    position: relative;
+    /* position: relative; */
 }
 
 .main-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: 597px 597px;
-    grid-gap: 8px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 50% 50%;
+    grid-gap: 7px;
 }
 
 .region h3{
@@ -31,7 +30,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 500;
-    position: absolute;
+    /* position: absolute; */
     /* transform: translateY(200%); */
 }
 
@@ -108,10 +107,10 @@ h1{
 }
 
 .africa h3{
-    /* transform: translate(50%, -500%); */
+    transform: translateY(-500%);
 }
 .africa a{
-    /* transform: translate(50%, -400%); */
+    transform: translateY(-400%);
 }
 
 .america {
@@ -158,7 +157,7 @@ h1{
 }
 
 .value h3{
-    font-size: clamp(16px,3vw,25px);
+    font-size: clamp(16px,2vw,25px);
     color: var(--dark_grey);
 }
 
@@ -168,7 +167,7 @@ h1{
 }
 
 .value p{
-    font-size: clamp(14px,3vw,18px);
+    font-size: clamp(12px,2vw,18px);
 }
 
 
@@ -185,11 +184,12 @@ h1{
     font-size: clamp(20px,3vw,30px);
     text-transform: uppercase;
     font-weight: 500;
-    align-self: flex-start;
 }
 
 .testimonies-main{
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
 }
 
 .testimony-box{
@@ -220,5 +220,35 @@ h1{
     color: var(--color-white);
 }
 
+@media (max-width: 1008px){
+    .testimony-1, .testimony-2{
+        display: none;
+    }
+}
+
+@media (max-width: 565px){
+    .value{
+        padding: 20px;
+        gap: 10px;
+    }
+}
+
+@media(max-width:560px){
+    .main-grid{
+        grid-gap: 4px;
+    }
+}
+
+@media (max-width: 505px){
+    .scroll-arrow{
+        display: none;
+    }
+}
+
+@media(max-width: 430px){
+    .banner{
+        padding: 25px 30px;
+    }
+}
 
 
