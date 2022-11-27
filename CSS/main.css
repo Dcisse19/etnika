@@ -25,6 +25,7 @@ img {
 body {
     background-color: var(--color-white);
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 /* on met des borders aux boites qu'on efface ensuite pour voir où se placent les sections */
@@ -47,6 +48,9 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+a:hover{
+    color: var(--color-red);
 }
 
 button {
@@ -94,7 +98,7 @@ nav a:hover {
 
 main {
     width: min(1195px, 90%);
-    margin: 20px auto 100px;
+    margin: 50px auto 100px;
     /* le auto le centre */
 }
 
@@ -116,11 +120,24 @@ main {
     gap: 100px;
 }
 
-.search-bar p {
+.search-bar::placeholder {
     color: #504F4F;
-    font-size: 12px;
+    font-size: clamp(12px, 3vw, 14px);
+    font-family: 'Montserrat', sans-serif;
+
 }
 
+.search-bar input{
+    border: none;
+    outline: none;
+    color: #504F4F;
+    font-size: clamp(12px, 3vw, 14px);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search-bar .fa-magnifying-glass{
+    cursor: pointer;
+}
 .header-icons {
     align-self: flex-end;
     font-size: x-large;
@@ -219,7 +236,7 @@ footer{
     padding: 10px;
 }
 
-::placeholder {
+footer ::placeholder {
     font-size: medium;
 }
 

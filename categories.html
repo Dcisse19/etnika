@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,7 +43,7 @@
             </div>
             <div class="header-icons flex">
                 <i class="fas fa-light fa-user"></i>
-                <i class="fas fa-light fa-cart-shopping"></i>
+                <a href="./panier.html"><i class="fas fa-light fa-cart-shopping"></i></a>
                 <div class="burger">
                     <span class="burger-bar burger-bar--top"></span>
                     <span class="burger-bar burger-bar--middle"></span>
@@ -66,94 +67,96 @@
         </nav>
         <hr class="hr-two">
     </header>
-<!--------------------Accueil------------------------->
-<main>
+    <!--------------------Categories------------------------->
+    <main>
         <div class="title-categories flex column">
-        <h1>Catégories </h1>
-        <p> De l’Asie à l’Amérique du sud en passant par l’afrique de l’est, découvrez nos produits classés par région. 
-            Tant de pays à découvrir, tant de traditions et savoir-faire, tant de richesse culturelle.
-        </p>
+            <h1>Catégories </h1>
+            <p> De l’Asie à l’Amérique du sud en passant par l’afrique de l’est, découvrez nos produits classés par
+                région.
+                Tant de pays à découvrir, tant de traditions et savoir-faire, tant de richesse culturelle.
+            </p>
         </div>
-        <div class="accueil-contenu flex ">
-           <div>
-            <img src="./Images/afrique.jpg" alt="photo de tenue traditionnel africain">
-            <button>
-                <a href="#">AFRIQUE DU SUD</a>
-            </button>
-         </div>
-         <div>
-            <img src="./Images/asie.jpg" alt="photo de tenue traditionnel de l'asie">
-            <button>
-                <a href="./categorie.html">ASIE</a>
-            </button>
-         </div>
-         <div>
-            <img src="./Images/south amarica.jpg" alt="photo de tenue traditionnel amaricain">
-            <button>
-                <a href="#">AMERIQUE DU SUD</a>
-            </button>
-         </div>
-         <div>
-            <img src="./Images/Europe.jpg" alt="photo de tenue traditionnel de l'Europe">
-            <button>
-                <a href="#">EUROPE</a>
-            </button>
-         </div>
+        <div class="categories-contenu flex ">
+            <div>
+                <img src="./Images/afrique.jpg" alt="photo de tenue traditionnel africain">
+                <button>
+                    <a href="#">AFRIQUE DU SUD</a>
+                </button>
+            </div>
+            <div>
+                <img src="./Images/asie.jpg" alt="photo de tenue traditionnel de l'asie">
+                <button>
+                    <a href="./categorie.html">ASIE</a>
+                </button>
+            </div>
+            <div>
+                <img src="./Images/south amarica.jpg" alt="photo de tenue traditionnel amaricain">
+                <button>
+                    <a href="#">AMERIQUE DU SUD</a>
+                </button>
+            </div>
+            <div>
+                <img src="./Images/Europe.jpg" alt="photo de tenue traditionnel de l'Europe">
+                <button>
+                    <a href="#">EUROPE</a>
+                </button>
+            </div>
         </div>
     </main>
-<!------------------PRE-FOOTER-------------------->
-<section id="pre-footer" class="flex">
-    <div class="garanty-box flex column">
-        <i class="fas fa-light fa-truck-fast"></i>
-        <h3>expédition rapide</h3>
-        <p>Après avoir passé commande, l'expédition de votre commande se fait sous 2 à 3 jours ouvrés</p>
-    </div>
-    <div class="garanty-box flex column">
-        <i class="fas fa-light fa-headset"></i>
-        <h3>service client</h3>
-        <p>Notre service client est à votre écoute 5 jours sur 7 pour toute demande d'information</p>
-    </div>
-    <div class="garanty-box flex column">
-        <i class="fas fa-light fa-credit-card"></i>
-        <h3>paiement sécurisé</h3>
-        <p>Le paiement de votre commande est sécurisé</p>
-    </div>
-</section>
-
-<footer class="flex column">
-    <div class="footer-one flex">
-        <nav class="footer-links flex column">
-            <a href="#">Nous contacter</a>
-            <a href="#">Mentions légales</a>
-            <a href="#">Conditions générales d'utilisation</a>
-            <a href="#">Conditions générales de vente</a>
-            <a href="#">Service client</a>
-        </nav>
-        <div class="newsletter flex column">
-            <h3>Newsletter</h3>
-            <p>Inscrivez-vous à notre newsletter pour recevoir toutes les informations et les bons plans par mail
-            </p>
-            <form class="newsletter-form flex column" action="">
-                <input type="text" name="firstname" id="firstname" placeholder="Prénom">
-                <input type="email" name="email" id="email" placeholder="E-mail">
-                <input class="submit-button" type="submit" value="Je m'inscris">
-            </form>
+    <!------------------PRE-FOOTER-------------------->
+    <section id="pre-footer" class="flex">
+        <div class="garanty-box flex column">
+            <i class="fas fa-light fa-truck-fast"></i>
+            <h3>expédition rapide</h3>
+            <p>Après avoir passé commande, l'expédition de votre commande se fait sous 2 à 3 jours ouvrés</p>
         </div>
-    </div>
-    <div class="social-medias flex">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-square-twitter"></i>
-    </div>
-    <img class="payment-methods" src="./Images/Moyens de paiement.png" alt="payment-methods">
-    <div class="up flex">
-        <p>Retour en haut</p>
-        <i class="fas fa-light fa-arrow-up"></i>
-    </div>
+        <div class="garanty-box flex column">
+            <i class="fas fa-light fa-headset"></i>
+            <h3>service client</h3>
+            <p>Notre service client est à votre écoute 5 jours sur 7 pour toute demande d'information</p>
+        </div>
+        <div class="garanty-box flex column">
+            <i class="fas fa-light fa-credit-card"></i>
+            <h3>paiement sécurisé</h3>
+            <p>Le paiement de votre commande est sécurisé</p>
+        </div>
+    </section>
 
-</footer>
+    <footer class="flex column">
+        <div class="footer-one flex">
+            <nav class="footer-links flex column">
+                <a href="#">Nous contacter</a>
+                <a href="#">Mentions légales</a>
+                <a href="#">Conditions générales d'utilisation</a>
+                <a href="#">Conditions générales de vente</a>
+                <a href="#">Service client</a>
+            </nav>
+            <div class="newsletter flex column">
+                <h3>Newsletter</h3>
+                <p>Inscrivez-vous à notre newsletter pour recevoir toutes les informations et les bons plans par mail
+                </p>
+                <form class="newsletter-form flex column" action="">
+                    <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input class="submit-button" type="submit" value="Je m'inscris">
+                </form>
+            </div>
+        </div>
+        <div class="social-medias flex">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+        </div>
+        <img class="payment-methods" src="./Images/Moyens de paiement.png" alt="payment-methods">
+        <div class="up flex">
+            <p>Retour en haut</p>
+            <i class="fas fa-light fa-arrow-up"></i>
+        </div>
 
-<script src="./JS/main.js"></script>       
+    </footer>
+
+    <script src="./JS/main.js"></script>
 
 </body>
+
 </html>

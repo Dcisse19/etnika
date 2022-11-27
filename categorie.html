@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet">
-    
-        <!-- CSS -->
-        <link rel="stylesheet" href="./CSS/main.css">
-        <!-- CSS -->
-        <link rel="stylesheet" href="./CSS/categorie.css">
-        <title>Etnika</title>
-    </head>
-    
-    <body>
-    
-        <!-- ------ HEADER -------- -->
-        <!-- à copier sur chaque fichier html avec le fichier main.css -->
-        <header>
-            <!-- HEADER 1 -->
-            <div id="header-one" class="flex">
-                <img src="./Images/logo_etnika.png" alt="logo_etnika">
-                <div class="search-bar" class="flex column">
-                    <form class="flex">
-                        <p>Rechercher un article</p>
-                        <button>
-                            <i class="fas fa-regular fa-magnifying-glass"></i>
-                        </button>
-                    </form>
-                    <hr>
-                </div>
-                <div class="header-icons flex">
-                    <i class="fas fa-light fa-user"></i>
-                    <i class="fas fa-light fa-cart-shopping"></i>
-                    <div class="burger">
-                        <span class="burger-bar burger-bar--top"></span>
-                        <span class="burger-bar burger-bar--middle"></span>
-                        <span class="burger-bar burger-bar--bottom"></span>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name flex column="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/categorie.css">
+    <title>Etnika</title>
+</head>
+
+<body>
+
+    <!-- ------ HEADER -------- -->
+    <!-- à copier sur chaque fichier html avec le fichier main.css -->
+    <header>
+        <!-- HEADER 1 -->
+        <div id="header-one" class="flex">
+            <img src="./Images/logo_etnika.png" alt="logo_etnika">
+            <div class="search-bar" class="flex column">
+                <form class="flex">
+                    <p>Rechercher un article</p>
+                    <button>
+                        <i class="fas fa-regular fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <hr>
+            </div>
+            <div class="header-icons flex">
+                <i class="fas fa-light fa-user"></i>
+
+                <a href="./panier.html"><i class="fas fa-light fa-cart-shopping"></i></a>
+                <div class="burger">
+                    <span class="burger-bar burger-bar--top"></span>
+                    <span class="burger-bar burger-bar--middle"></span>
+                    <span class="burger-bar burger-bar--bottom"></span>
                 </div>
             </div>
-            <hr class="hr-one">
-            <nav class="navbar-mobile flex column">
-                <a href="./index.html">Accueil</a>
-                <a href="#">Boutique</a>
-                <a href="./categories.html">Catégories</a>
-                <a href="#">A propos</a>
-            </nav>
-            <!-- HEADER 2 -->
-            <nav id="header-two" class="flex">
-                <a href="./index.html">Accueil</a>
-                <a href="#">Boutique</a>
-                <a href="./categories.html">Catégories</a>
-                <a href="#">A propos</a>
-            </nav>
-            <hr class="hr-two">
-        </header>
+        </div>
+        <hr class="hr-one">
+        <nav class="navbar-mobile flex column">
+            <a href="./index.html">Accueil</a>
+            <a href="#">Boutique</a>
+            <a href="./categories.html">Catégories</a>
+            <a href="#">A propos</a>
+        </nav>
+        <!-- HEADER 2 -->
+        <nav id="header-two" class="flex">
+            <a href="./index.html">Accueil</a>
+            <a href="#">Boutique</a>
+            <a href="./categories.html">Catégories</a>
+            <a href="#">A propos</a>
+        </nav>
+        <hr class="hr-two">
+    </header>
 
     <!-- MAIN -->
 
     <main>
-
-        <div class="continent flex column">
-            <h1 id="asie">L'ASIE</h1>
-            <div id="pays" class="flex">
-                <a>Corée</a>
-                <a>Chine</a>
-                <a>Inde</a>
-                <a>Japon</a>
-                <a>Mangolie</a>
+        <section class="continent flex column">
+            <h1>L'asie</h1>
+            <div class="pays flex">
+                <a href="#">Corée</a>
+                <a href="#">Chine</a>
+                <a href="#">Inde</a>
+                <a href="#">Japon</a>
+                <a href="#">Mongolie</a>
             </div>
 
             <!-- FORM -->
 
-            <form action="" class="filters flex">
-                <select name="filters" id="filters">
-                    <option value="">-- Trier par --</option>
+            <form action="#" class="filters flex">
+                <select name flex column="filters" id="filters">
+                    <option value="">Trier par : </option>
                     <option value="">Prix ascendant</option>
                     <option value="">Prix descendant</option>
                 </select>
-                <select name="size" id="size">
-                    <option value="">-- Taille --</option>
+                <select name flex column="size" id="size">
+                    <option value="">Taille :</option>
                     <option value="">M</option>
                     <option value="">S</option>
                     <option value="">M</option>
@@ -100,141 +100,133 @@
                 </select>
                 <input type="text" placeholder="Couleur :">
             </form>
-        </div>
+        </section>
 
         <!-- NOMBRE D'ARTICLES -->
 
-        <div class="separator"> 14 articles
+        <div class="separator">
+            <span>13 articles</span>
         </div>
 
         <!-- IMAGES -->
 
-        <div id="products" class="flex">
+        <section id="products" class="flex">
             <a href="./produit.html" class="product-box flex column">
-                <img class="product-photo" src="./Images/product_sari_2.png" alt="Hanbok">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/sari-purple.png" alt="purple sari">
+                <div class="product-name flex column">
                     <p>Sari de cérémonie</p>
                     <p>127,95€</p>
                 </div>
             </a>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/korian-jeogori.png" alt="Jeogori">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/china-Etsy.png" alt="china etsy">
+                <div class="product-name flex column">
                     <p>Jeogori
-                        <p />
+                    </p>
                     <p>124.60€</p>
                 </div>
             </div>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/china-Etsy.png" alt="Etsy">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/china-hanfu tang.png" alt="china hanfu tang">
+                <div class="product-name flex column">
                     <p>Etsy
-                        <p />
+                    </p>
                     <p>99.00€</p>
                 </div>
             </div>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/china-Hanfu.png" alt="Hanfu">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/koria-Hanbok.png" alt="korean hanbok">
+                <div class="product-name flex column">
                     <p>Hanfu
-                        <p />
+                    </p>
                     <p>85.60€</p>
                 </div>
             </div>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/china-hanfu tang.png" alt="Hanfu Tang">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/mangole-1 1.png" alt="mangole one">
+                <div class="product-name flex column">
                     <p>Hanfu Tang
-                        <p />
+                    </p>
                     <p>95.70€</p>
                 </div>
             </div>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/idian-Attire.png" alt="Folk Attire">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/china-Hanfu.png" alt="china hanfu">
+                <div class="product-name flex column">
                     <p>Folk Attire
-                        <p />
+                    </p>
                     <p>95.40€</p>
                 </div>
             </div>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/india-Kutra.png" alt="Kutra">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/idian-Attire.png" alt="Indian sari">
+                <div class="product-name flex column">
                     <p>Kutra
-                        <p />
+                    </p>
                     <p>111.10€</p>
                 </div>
             </div>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/india-lehenga.png" alt="Lehenga">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/mangole-3.png" alt="mangole three">
+                <div class="product-name flex column">
                     <p>Lehenga
-                        <p />
+                    </p>
                     <p>150.00€</p>
                 </div>
             </div>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/japan-hakama.png" alt="Hakama">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/japan-kimono.png" alt="japanese kimono">
+                <div class="product-name flex column">
                     <p>Hakama
-                        <p />
+                    </p>
                     <p>89.90€</p>
                 </div>
             </div>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/japan-kimono.png" alt="Folk Kimono">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/korian-jeogori.png" alt="korean jeogori">
+                <div class="product-name flex column">
                     <p>Folk Kimono
-                        <p />
+                    </p>
                     <p>95.55€</p>
                 </div>
             </div>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/japan-yukata.png" alt="Yukata">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/japan-yukata.png" alt="japanese ukata">
+                <div class="product-name flex column">
                     <p>Yukata
-                        <p />
+                    </p>
                     <p>85.70€</p>
                 </div>
             </div>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/mangole-1.png" alt="Traditional Folk Black">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/india-lehenga.png" alt="indian lehenga">
+                <div class="product-name flex column">
                     <p>Traditional Folk Black
-                        <p />
+                    </p>
                     <p>85.50€</p>
                 </div>
             </div>
 
             <div class="product-box flex column">
-                <img class="photo flex" src="./Images/mangole-2.png" alt="Traditional Folk Blue">
-                <div>
+                <img class="product-photo" src="./Images/Asian_products/mangole-2.png" alt="mangole two">
+                <div class="product-name flex column">
                     <p>Traditional Folk Blue
-                        <p />
+                    </p>
                     <p>85.50€</p>
                 </div>
             </div>
-
-            <div class="product-box flex column">
-                <img class="photo flex" src="./Images/mangole-3.png" alt="Traditional Folk Terkwaz">
-                <div>
-                    <p>Traditional Folk Terkwaz
-                        <p />
-                    <p>99.90€</p>
-                </div>
-            </div>
-
+        </section>
     </main>
 
     <!-- FOOTER -->
@@ -272,8 +264,9 @@
                 <p>Inscrivez-vous à notre newsletter pour recevoir toutes les informations et les bons plans par mail
                 </p>
                 <form class="newsletter-form flex column" action="">
-                    <input type="text" name="firstname" id="firstname" placeholder="Prénom">
-                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="text" name flex column="firstname flex column" id="firstname flex column"
+                        placeholder="Prénom">
+                    <input type="email" name flex column="email" id="email" placeholder="E-mail">
                     <input class="submit-button" type="submit" value="Je m'inscris">
                 </form>
             </div>

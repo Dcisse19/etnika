@@ -1,0 +1,251 @@
+/* ------- Progress bar --------- */
+
+
+#progress-bar {
+    justify-content: center;
+    gap: 5px;
+    margin: 50px 0px 100px;
+}
+
+.step {
+    gap: 10px;
+}
+
+.step > p {
+    font-size: 13px;
+}
+.step-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-weight: 700;
+    justify-content: center;
+    
+}
+
+.step-1{
+    background-color: var(--color-light_grey);
+}
+.step-2{
+    background-color: var(--color-light_grey);
+}
+.step-3{
+    background-color: var(--color-red);
+}
+
+#progress-bar span{
+    position: relative;
+    display: inline-block;
+    background: black;
+    min-width: 20%;
+    height: .5px;
+    margin-bottom: 30px;
+}
+
+/* --------- Continuer achats ---------- */
+.continuer {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+/* --------- MAIN BOX -------- */
+.main-box{
+    border: 1px solid black;
+    padding: 20px 40px;
+}
+/* -------------- nombre d'articels ------------ */
+.separator {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 20px;
+}
+
+.separator > span {
+    position: relative;
+    display: inline-block;
+}
+
+.separator > span:before,
+.separator > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: var(--color-dark_grey);
+}
+
+.separator > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.separator > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+/* --------formulaire et total------ */
+
+.payment-total{
+    justify-content: unset;
+}
+
+/* ----------- Paiement formulaire -------------- */
+
+.payment-choice button {
+    width: 100px;
+}
+.payment{
+    border: 1px solid black;
+    align-items: center;
+    width: min(740px, 100%);
+    padding: 10px 20px 40px;
+    min-height: 332px;
+
+}
+
+.payment-form{
+    gap: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    align-items: flex-start;
+}
+
+.card-number, .expiration, .cvv{
+    gap: 12px;
+}
+
+.expiration-date  {
+    gap: 5px;
+}
+.submit {
+    gap: 20px;
+    align-self: center;
+    margin-top: 20px;
+}
+.submit-button{
+    border: none;
+    text-transform: uppercase;
+    padding: 6px 10px;
+
+}
+.submit-button:hover{
+    background-color: var(--color-beige);
+    color: black;
+}
+
+.what {
+    font-weight: lighter;
+    color: blue;
+    text-decoration: underline;
+}
+ /* ---------- PRIX TOTAL ------------ */
+ .total {
+    width: min(376px, 100%);
+    border: 1px solid black;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 10px 20px 40px;
+    min-height: 332px;
+
+}
+.total hr {
+    width: 50%;
+}
+
+.total-prix{
+    font-weight: bold;
+    font-size: 25px;
+}
+.total span {
+    gap: 10px;
+    font-size: 16px;
+}
+
+/* ---------- CONDITION ----------- */
+.condition {
+    margin-top: 20px;
+    gap: 20px;
+    font-weight: 300px;
+    align-items: flex-start;
+}
+
+.condition i {
+    color: green;
+}
+
+/* ----------- autres options de paiement ---------- */
+.other-payments-p{
+    font-size: clamp(10px,3vw,15px);
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.other-payments {
+    justify-content: center;
+    gap: 20px;
+}
+.other-payments img{
+    width: 100px;
+}
+/* ------- MEDIA QUERIES ----------- */
+@media (max-width:787px){
+    .payment-total{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .total{
+        width: 100%;
+    }
+}
+@media (max-width: 750px){
+    /* ------- progress bar ------- */
+    #progress-bar  {
+        margin: 0px 20px;
+    }
+    .step-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .step > p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 550px){
+    /* ------- progress bar ------- */
+    #progress-bar  {
+        margin: 0px 30px;
+    }
+    .step-circle {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+    /* .step > p {
+        font-size: 10px;
+    } */
+}
+
+@media(max-width: 545px){
+    .main-box {
+        padding: 10px
+    }
+}
+@media (max-width:455px){
+    .card-number, .expiration, .cvv{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .payment-form {
+        width: 90%;
+    }
+}

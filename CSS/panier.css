@@ -1,480 +1,333 @@
+/******Panier***/
+main {
+    font-weight: 300;
+    /* background-color: var(--color-extra_light_grey); */
+}
 
-    /* ------ CSS Global ------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ------- Progress bar --------- */
+
+
+#progress-bar {
+    justify-content: center;
+    gap: 5px;
+    margin: 50px 0px 100px;
+}
+
+.step {
+    gap: 10px;
+}
+
+.step > p {
+    font-size: 13px;
+}
+.step-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-weight: 700;
+    justify-content: center;
     
 }
 
-img{
-    max-width: 100%;  /* Les images vont toujours faire la taille importé, si elle ne peuvent plus, elles s'adaptent à la fenêtre*/
-    display: block; /* car images hybrides entre block et inline*/
+.step-1{
+    background-color: var(--color-red);
+}
+.step-2{
+    background-color: var(--color-light_grey);
+}
+.step-3{
+    background-color: var(--color-light_grey);
 }
 
-:root{   /* variables*/
-    --color-red: #882404;
-    --color-white: #FFFFFF;
-    --color-light_grey: #EEEEEE;
-    --color-dark_grey: #232323;
-    --color-beige: #D7C4AB;
+#progress-bar span{
+    position: relative;
+    display: inline-block;
+    background: black;
+    min-width: 20%;
+    height: .5px;
+    margin-bottom: 30px;
 }
 
-body {
-    background-color: var(--color-white);
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* on met des borders aux boites qu'on efface ensuite pour voir où se placent les sections */ 
-
-/* div, section, main, header, nav {
-    border : 1px solid black;
-} */
-
-.flex {  /* clesse globale pour metrre en flex, à ajouter dans le html*/
-    display: flex;
-    justify-content: space-between;
+/* --------- Continuer achats ---------- */
+.continuer {
+    justify-content: flex-start;
     align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
 }
 
-.column {
-    flex-direction: column;
+/* -------------- nombre d'articels ------------ */
+.separator {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 20px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+.separator > span {
+    position: relative;
+    display: inline-block;
 }
 
-button {
-    border: none;
-    background-color: var(--color-white);
+.separator > span:before,
+.separator > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: var(--color-dark_grey);
 }
 
-/* HEADER */
-
-header {
-    width: min(1400px, 95%);
-    margin: 0px auto 0px; /* le auto le centre */
+.separator > span:before {
+    right: 100%;
+    margin-right: 15px;
 }
-/* MAIN  */
 
-main {
-    width: min(1195px, 90%);
-    margin: 20px auto 100px; /* le auto le centre */
+.separator > span:after {
+    left: 100%;
+    margin-left: 15px;
 }
-nav a:hover {  
+
+
+
+/* ---------- section commande ---------- */
+#detail-commande{
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* ---------- section article et livraison ---------     */
+
+.article-livraison {
+    align-items: flex-start;
+    gap: 50px;
+}
+/* ----------- Articles du panier ----------  */
+.articles{
+    border: 1px solid black;
+    width: 100%;
+    /* background-color: var(--color-extra_light_grey); */
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px 20px;
+
+}
+
+.articles h2{
+    font-size: clamp(16px,3vw,25px);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.article {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+
+}
+.detail {
+    align-items: flex-start;
+    gap: 10px;
+}
+.nom-prix{
+    width: 100%;
+    font-weight: 700;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+.nom-prix p{
+    font-size: 18px;
+}
+
+.fa-heart {
     color: var(--color-red);
 }
-/* HEADER 1 */
 
-.search-bar {
-    align-self: flex-end;
-    gap: 10px;
-    color: #504F4F;
-}
-.search-bar p{
-    font-size: 12px;
-}
-.search-bar div {
-    gap: 100px;
+.elements {
+    gap: 40px;
+
 }
 
-.header-icons{
-    align-self: flex-end;
-    font-size: x-large;
-    color: var(--color-dark_grey);
-    gap: 20px;
-}
-
-header hr{
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-/* HEADER 2 */
-
-
-#header-two{
-    text-transform: uppercase;
-    justify-content: center;
-    gap: 100px;
-}
-#header-one{
-width: 95%;
-}
-
-.navbar-mobile {
-    display: none;
-}
-
-.search-bar {
-    align-self: flex-end;
-    gap: 10px;
-}
-
-.search-bar p {
-    color: #504F4F;
-    font-size: 12px;
-}
-
-.search-bar div {
-    gap: 100px;
-}
-
-.header-icons {
-    align-self: flex-end;
-    font-size: x-large;
-    color: var(--color-dark_grey);
-    gap: 20px;
-}
-
-
-
-header hr {
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-.hr-one {
-    box-shadow: 0 20px 20px -20px #333;
-}
-
-/* -------HEADER 2----------- */
-
-#header-two {
-    justify-content: center;
-    gap: 100px;
-}
-
-/******Accueil***/
-.bar{
-    justify-content: center;
-}
-h3{
-    font-weight: 200px;
-}
-.btn{
+.element {
     justify-content: space-around;
-    padding: 30px;
-}
-.btn-rouge, .btn-gris{
-    display:inline-block;
-    border:black 2px solid;
-    margin:2px;
-    font-size:24px;
-    cursor:pointer;
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    }
-    .btn-rouge{
-        color: var(--color-white);
-        background-color: var(--color-red);
-    }
-    .btn-gris{
-        background-color: var(--color-light_grey);
-    }/*
-    hr {
-        width: 100%;
-        color: var(--color-dark_grey);
-    }*/
-    .achat{
-        padding: 30px 30px;
-     display: flex;
-    align-items: center;
-    
-    }
-    section img{
-        display: flex;
-        justify-content: center;
-    }
-    .article{
-        display: flex;
-    /* justify-content: space-between; */
-      align-items: center;
-      padding: 20px;
-        
-    }
-    .detail{
-        margin-left: 36px;
-    }
-    .detail li{
-        padding-bottom:20px;
-    }
-    h2{
-        font-weight: 300px;
-        padding-bottom: 5px;
-    }
-    .fa-heart{
-        color: var(--color-red);
-    }
-    .elements{
-        gap:40px;
-        
-    }
-    .element{
-        justify-content: space-around;
-        
-    }
-    h4{
-        padding-bottom: 30px;
-    }
-    .livraison p{
-        padding-bottom: 30px;
-    }
-    
-    label{
-        font-weight: bold;
-    }
-    .groupe1{
-        gap:20px;
-        padding-bottom: 20px;
-    }
-    .groupe2{
-        gap: 20px;
-        padding-top: 20px;
-        padding-bottom: 30px;
-    }
-    .condition{
-        gap: 20px;
-        justify-content: space-around;
-        align-items: flex-start;
-        font-weight: 300px;
-    }
-    .condition i {
-        color: green;
-    }
-    .livraison hr{
-        width: 50%;
-    }
-    .liste2 hr{
-        width: 50%;
-    }
-    .liste2{
-        gap: 20px;
-    }
-    span{
-        gap: 10px;
-        font-weight: bold;
-    }
-     .liste2 a {
-        padding: 15px 30px;
-        border: none;
-        background-color: var(--color-beige);
-    }
-/* --------- PRE-FOOTER / GARANTIES --------- */
-#pre-footer{
-    background: var(--color-light_grey);
-    padding: 50px;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
+    gap: 10px;
+
 }
 
-.garanty-box {
-    width: min(300px, 100%);
-    text-align: center;
-    gap: 15px;
-    color: var(--color-dark_grey);
+.articles hr{
+    width: 100%;
+    border-top: 1px solid grey;
 }
 
-.garanty-box i{
-    font-size: xx-large;
+/* --------------- livraison ------------ */
+.livraison {
+    border: 1px solid black;
+    padding: 10px 20px;
+
+
+    /* background-color: var(--color-beige); */
+
 }
-.garanty-box h3{
+h4 {
+    padding-bottom: 30px;
+}
+
+.livraison p {
+    padding-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.groupe1 {
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.groupe2 {
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+
+.livraison hr {
+    width: 50%;
+}
+
+/* ----------- ASIDE ------------- */
+aside {
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+ /* ---------- PRIX TOTAL ------------ */
+.total {
+    width: 100%;
+    border: 1px solid black;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 10px 20px 40px;
+
+}
+.total hr {
+    width: 50%;
+}
+
+.total-prix{
+    font-weight: bold;
+    font-size: 25px;
+}
+.total span {
+    gap: 10px;
+    font-size: 16px;
+}
+.total a{
+    margin-top: 20px;
+}
+
+.btn {
+    align-self: center;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: 10px 20px;
+    font-size: clamp(5px, 3vw, 15px);
+    letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-/* ------------ FOOTER ------------- */
-footer{
-    padding: 100px;
-    background-color: var(--color-extra_light_grey);
-    gap: 80px;
+.btn:hover {
+    background-color: var(--color-beige);
+    color: var(--color-black);
 }
 
 
-.footer-one{
-    width: 100%;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 50px;
-    margin-bottom: 50px;
-} 
-
-.footer-links{
-    width: min(310px,100%);
+/* ---------- CONDITION ----------- */
+.condition {
+    padding: 10px 20px;
+    border: 1px solid black;
     gap: 20px;
+    font-weight: 300px;
     align-items: flex-start;
 }
 
-.footer-links a{
-    text-transform: none;
-    font-size: clamp(13px,3vw,16px);
+.condition i {
+    color: green;
 }
 
-.newsletter{
-    width: min(550px,100%);
-    text-align: center;
-    gap: 20px;
-}
-
-.newsletter h3{
-    text-transform: uppercase;
-    font-size: clamp(18px,3vw,24px);
-}
-
-.newsletter-form{
-    width: min(350px,100%);
-    gap: 13px;
-}
-.newsletter-form input{
-    width: 100%;
-    border: 2px solid var(--color-red);
-    padding: 10px;
-}
-
-::placeholder {
-    font-size: medium;
-}
-
-.submit-button{
-    background-color: var(--color-red);
-    color: white;
-    padding: 2px 6px;
-}
-
-.social-medias{
-    text-align: center;
-    gap: 40px;
-}
-.social-medias .fa-brands{
-    font-size: 50px;
-}
-
-.payment-methods{
-    width: 300px;
-}
-
-.up{
-    gap: 5px;
-}
-/*================ MEDIA QUERIES ====================== */
-@media (max-width: 1000px) {
-/* ------- FOOTER  ------ */
-
-footer{
-    padding: 30px;
-}
-}
-
-@media (max-width: 750px) {
-
-    /* HEADER */
-
-    /* en dessous et = à 750px*/
-    #header-two,
-    .search-bar,
-    .hr-two {
-        display: none;
+@media (max-width: 1090px){
+    .element{
+        gap: 2px;
     }
-
-    .hr-one {
-        margin-top: 10px;
-        margin-bottom: 0px;
+    .elements{
+        gap: 5px;
     }
-
-    .navbar-mobile {
-        padding: 30px 0px;
-        display: none;
-        gap: 25px;
-        background-color: var(--color-beige);
-    }
-
-
-    /* ---- Header burger menu ------ */
-    .burger {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 30px;
-        cursor: pointer;
-    }
-
-    .burger-bar {
-        width: 30px;
-        height: 5px;
-        background: var(--color-dark_grey);
-        border-radius: 5px;
-    }
-
-    .burger-bar--top,
-    .burger-bar--bottom {
-        content: "";
-        position: absolute;
-    }
-
-    .burger-bar--top {
-        transform: translateY(-12px);
-    }
-
-    .burger-bar--bottom {
-        transform: translateY(12px);
-    }
-
-    /* ANIMATION BURGER */
-    .burger.open .burger-bar--top {
-        background: transparent;
-    }
-
-    .burger.open .burger-bar--middle {
-        transform: rotate(45deg);
-    }
-
-    .burger.open .burger-bar--bottom {
-        transform: rotate(-45deg);
-    }    
-
-        /* ---------FOOTER ------ */
-        .footer-one{
-            flex-direction: column;
-            align-items: center;
-        }
 }
-
-@media (max-width: 550px){
-    /* ------------ FOOTER ------------- */
-footer{
-    padding: 30px;
-}
-.article{
-    flex-direction: column;
-}
-.article img{
-    width: min(1195px,80%);
-}
-
-.social-medias .fa-brands{
-    font-size: 40px;
-}
-
-.payment-methods{
-    width: 250px;
-}
-}
-@media (max-width:1030px){
-    .accueil-contenu{
+@media (max-width:980px) {
+    #detail-commande {
         flex-direction: column;
-        padding: 20px;
-        gap: 30px;
+        gap: 15px;
     }
+    .article-livraison{
+        gap: 15px;
+    }
+    .elements{
+        gap: 10px;
+    }
+    aside{
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 750px){
+    /* ------- progress bar ------- */
+    #progress-bar  {
+        margin: 0px 20px;
+    }
+    .step-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .step > p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 630px){
     .article{
         flex-direction: column;
     }
-    .article img{
-        width: min(1195px,80%);
+    .article a{
+        align-self: center;
     }
+    .elements{
+        gap: 5px;
+    }
+
+    .livraison label, .livraison li{
+        font-size: 12px;
+    }
+}
+@media (max-width: 550px){
+    /* ------- progress bar ------- */
+    #progress-bar  {
+        margin: 0px 30px;
+    }
+    .step-circle {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+    /* .step > p {
+        font-size: 10px;
+    } */
 }

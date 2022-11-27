@@ -4,36 +4,53 @@
 
 
 
+.main-grid img{
+    position: relative;
+}
 
 .main-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: 625px 520px;
-    /* grid-gap: 10px; */
+    grid-template-columns: 597px 597px;
+    grid-gap: 8px;
     grid-auto-rows: minmax(100px, auto);
 }
 
-.main-grid h3{
+.region h3{
     color: var(--color-white);
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: clamp(24px,3vw,45px);
+    /* transform: translatey(-200px); */
 }
 
-.main-grid a{
+.region a{
     background-color: var(--color-white);
     padding: 10px 20px;
     font-size: clamp(5px,3vw,15px);
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 500;
+    position: absolute;
+    /* transform: translateY(200%); */
 }
+
 
 .main-grid a:hover{
     background-color: var(--color-red);
     color: var(--color-white);
 }
+/* .region-text{
+    position: absolute;
+    top: 50%;
+    /* left: 50%; 
+} */
 
+
+.region img{
+    width: 100%;
+    height: 100%;
+}
 
 
 /* ------------ BANNER ---------- */
@@ -76,44 +93,41 @@ h1{
 }
 
 
-.region{
+
+
+.region-text{
+    align-items: center;
     gap: 25px;
 }
 /* ------- AFRICA SECTION -------- */
 
 .africa {
-    min-height: 524px;
     grid-column: 1;
     grid-row: 2;
-    background: url(../Images/african\ ethnic_women.png) 100% 100% no-repeat;
-    justify-content: center;
+    /* justify-content: center; */
+}
+
+.africa h3{
+    /* transform: translate(50%, -500%); */
+}
+.africa a{
+    /* transform: translate(50%, -400%); */
 }
 
 .america {
     grid-column: 2;
     grid-row: 2;
-    min-height: 524px;
-    padding: 10px;
-    background: url(../Images/pollera_panama_girl.png) rgba(65, 60, 63, 0.3) 100% 100% no-repeat;
-    background-blend-mode: multiply;
     justify-content: center;
     align-items: flex-start;
-}
-
-.four {
-    grid-column: 1;
-    grid-row: 3;
 }
 
 .asia {
     grid-column: 2;
     grid-row: 3/6;
-    min-height: 791px;
-    background: url(../Images/red\ kimono_woman.png) 100% 100% no-repeat;
     justify-content: center;
 }
 
-.asia h3{
+/* .asia h3{
     color: black;
 }
 
@@ -124,19 +138,13 @@ h1{
 .asia a:hover{
     background: var(--color-white);
     color: black;
-}
+} */
 
-.six {
-    grid-column: 2;
-    grid-row: 6/7;
-}
+
 .europe {
 
     grid-column: 1;
     grid-row: 4/7;
-    min-height: 800px;
-    padding: 15px;
-    background: url(../Images/kilt_man.png) 100% 100% no-repeat;
     align-items: flex-end;
     justify-content: center;
 }
@@ -170,6 +178,7 @@ h1{
     padding: 20px;
     margin-top: 100px;
     gap: 50px;
+    align-items: center;
 }
 
 #testimonies h3{

@@ -20,7 +20,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/main.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="./CSS/categorie.css">
+    <link rel="stylesheet" href="./CSS/payment.css">
     <title>Etnika</title>
 </head>
 
@@ -43,7 +43,7 @@
             </div>
             <div class="header-icons flex">
                 <i class="fas fa-light fa-user"></i>
-                <i class="fas fa-light fa-cart-shopping"></i>
+                <a href="./panier.html"><i class="fas fa-light fa-cart-shopping"></i></a>
                 <div class="burger">
                     <span class="burger-bar burger-bar--top"></span>
                     <span class="burger-bar burger-bar--middle"></span>
@@ -68,161 +68,198 @@
         <hr class="hr-two">
     </header>
 
-        <!-- MAIN -->
+    <!-- MAIN -->
 
-        <main>
-
-            <!-- scroll bar -->
-
-            <div class="scroll1">
-                <h3 id="1">1</h3>
-                <div class="scroll2">
+    <main>
+        <!-- ------------- barre de progrès ---------------- -->
+        <section id="progress-bar" class="flex">
+            <a href="./panier.html">
+                <div class="step flex column">
+                    <div class="step-circle step-1 flex">
+                        <p>1</p>
+                    </div>
+                    <p>Panier</p>
                 </div>
-                <h3 id="2">2</h3>
-                <div class="scroll3">
+            </a>
+            <span></span>
+            <div class="step flex column">
+                <div class="step-circle step-2 flex">
+                    <p>2</p>
                 </div>
-                <div id="3">3</div>
+                <p>Livraison</p>
             </div>
-
-            <!-- continuer mes achats -->
-
-            <div>
-                <a href="#"> continuer mes achats </a>
-            </div>
-
-            <!-- MAIN BODY -->
-
-            <!-- NOMBRE D'ARTICLES -->
-
-            <div class="separator-p"> 2 articles
-            </div>
-
-            <!-- MAIN BOX -->
-
-            <!-- FORM -->
-
-            <section class="pay flex">
-
-                <div class="carte-info">
-                    <form action="" class="info flex">Carte bancaire
-                        <input type="text" placeholder="">
+            <span></span>
+            <div class="step flex column">
+                <div class="step-circle step-3 flex">
+                    <p>3</p>
                 </div>
-
-                <br>
-
-                <div class="carte-date">
-
-                    <select name="date1" id="date1">
-                        <option value="">Mois</option>
-                        <option value="">janvier</option>
-                        <option value="">février</option>
-                        <option value="">mars</option>
-                        <option value="">avril</option>
-                        <option value="">mai</option>
-                        <option value="">juin</option>
-                        <option value="">juillet</option>
-                        <option value="">août</option>
-                        <option value="">septembre</option>
-                        <option value="">octobre</option>
-                        <option value="">novembre</option>
-                        <option value="">décembre</option>
-                    </select>
-
-                    <select name="date2" id="date2">
-                        <option value="">Année</option>
-                        <option value="">2022</option>
-                        <option value="">2023</option>
-                        <option value="">2024</option>
-                        <option value="">2025</option>
-                        <option value="">2026</option>
-                        <option value="">2027</option>
-                        <option value="">2028</option>
-                    </select>
-                </div>
-
-                <br>
-
-                <div class="carte-code">
-
-                    <form action="" class="info flex">Code de vérification
-                        <input type="text" placeholder="">
-                </div>
-                <a href="#">Que-ce que c’est?</a>
-
-                <br>
-
-                <div class="excute-y">
-                    <form action="" class="info flex">
-                        <input type="text" placeholder="Valider">
-                        <input type="text" placeholder="Annuller">
-                </div>
-            </form>
-            <div class="total">
-                <p><b>Total HT :</b>   255,90€</p>
-                <p><b>TVA :</b>   10,16€</p>
-                <p><b>Total TTC :</b>   266,06€</p>
-                <p><b>Livraison :</b>   Gratuit</p>
-                <hr>
-                <p><b>Total:</b>   266,06€</p>
-            </div>
-
-            </section>
-
-        </main>
-
-        <!-- FOOTER -->
-        <section id="pre-footer" class="flex">
-            <div class="garanty-box flex column">
-                <i class="fas fa-light fa-truck-fast"></i>
-                <h3>expédition rapide</h3>
-                <p>Après avoir passé commande, l'expédition de votre commande se fait sous 2 à 3 jours ouvrés</p>
-            </div>
-            <div class="garanty-box flex column">
-                <i class="fas fa-light fa-headset"></i>
-                <h3>service client</h3>
-                <p>Notre service client est à votre écoute 5 jours sur 7 pour toute demande d'information</p>
-            </div>
-            <div class="garanty-box flex column">
-                <i class="fas fa-light fa-credit-card"></i>
-                <h3>paiement sécurisé</h3>
-                <p>Le paiement de votre commande est sécurisé</p>
+                <p>Paiement</p>
             </div>
         </section>
-    
-        <footer class="flex column">
-            <div class="footer-one flex">
-                <nav class="footer-links flex column">
-                    <a href="#">Nous contacter</a>
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Conditions générales d'utilisation</a>
-                    <a href="#">Conditions générales de vente</a>
-                    <a href="#">Service client</a>
-                </nav>
-                <div class="newsletter flex column">
-                    <h3>Newsletter</h3>
-                    <p>Inscrivez-vous à notre newsletter pour recevoir toutes les informations et les bons plans par mail
-                    </p>
-                    <form class="newsletter-form flex column" action="">
-                        <input type="text" name="firstname" id="firstname" placeholder="Prénom">
-                        <input type="email" name="email" id="email" placeholder="E-mail">
-                        <input class="submit-button" type="submit" value="Je m'inscris">
+
+        <!-- --------- continuer mes achats -------- -->
+
+        <a href="./categories.html" class="continuer flex">
+            <i class="fa-solid fa-caret-left"></i>
+            <p>continuer mes achats</p>
+        </a>
+
+
+
+        <!-- MAIN BOX -->
+        <section class="main-box">
+            <!-- NOMBRE D'ARTICLES -->
+            <div class="separator">
+                <span>2 articles</span>
+            </div>
+            <div class="payment-total flex">
+                <div class="payment flex column">
+                    <div class="payment-choice flex">
+                        <button><img src="./Images/payment/Mastercard.png" alt="master card"></button>
+                        <button><img src="./Images/payment/Visa.png" alt="visa"></button>
+                        <button><img src="./Images/payment/carte_bleue 1.png" alt="carte bleue"></button>
+                    </div>
+                    <form class="payment-form flex column">
+                        <div class="card-number flex">
+                            <label for="card-number">N° de carte bancaire : </label>
+                            <input type="text" name="card-number" id="card-number" maxlength="16" minlength="16">
+                        </div>
+                        <div class="expiration flex">
+                            <label for="expiration">Date d'expiration :</label>
+                            <div class="expiration-date flex">
+                                <select name="month" id="month">
+                                    <option value="">Mois</option>
+                                    <option value="">01</option>
+                                    <option value="">02</option>
+                                    <option value="">03</option>
+                                    <option value="">04</option>
+                                    <option value="">05</option>
+                                    <option value="">06</option>
+                                    <option value="">07</option>
+                                    <option value="">08</option>
+                                    <option value="">09</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                </select>
+                                <p>/</p>
+                                <select name="year" id="year">
+                                    <option value="">Année</option>
+                                    <option value="">2022</option>
+                                    <option value="">2023</option>
+                                    <option value="">2024</option>
+                                    <option value="">2025</option>
+                                    <option value="">2026</option>
+                                    <option value="">2027</option>
+                                    <option value="">2028</option>
+                                    <option value="">2029</option>
+                                    <option value="">2030</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cvv flex">
+                            <label for="cvv">Code de vérification :</label>
+                            <input type="text" name="cvv" id="cvv" placeholder="XXX" maxlength="3" minlength="3">
+                            <a class="what" href="#">Que-ce que c’est ?</a>
+                        </div>
+                        <div action="#" class="submit flex">
+                            <input class="submit-button" type="submit" value="Valider">
+                            <input class="submit-button" type="submit" value="Annuler">
+                        </div>
                     </form>
                 </div>
+                <aside class="total flex column">
+                    <p>Sous-total HT : 255,90€</p>
+                    <p>TVA : 10,16€</p>
+                    <p>Sous-total TTC : 266,06€</p>
+                    <p>Livraison : Gratuit</p>
+                    <hr>
+                    <p class="total-prix"><span>Total: </span> 266,06€</p>
+                    <p>Payez en 3x ou 4x sans frais dès 150€ d’achat</p>
+                </aside>
             </div>
-            <div class="social-medias flex">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-square-twitter"></i>
+            <div class="condition flex column">
+                <div class="flex">
+                    <i class="fas fa-light fa-check"></i>
+                    <p>Paiement sécurisé</p>
+                </div>
+                <div class="flex">
+                    <i class="fas fa-light fa-check"></i>
+                    <p>Paiement en 3x ou 4x sans frais dés 150€ d’achat</p>
+                </div>
+                <div class="flex">
+                    <i class="fas fa-light fa-check"></i>
+                    <p>Livraison offerte dés 100€ d’achat </p>
+                </div>
+                <div class="flex">
+                    <i class="fas fa-light fa-check"></i>
+                    <p>Retour gratuit sous 30 jours</p>
+                </div>
             </div>
-            <img class="payment-methods" src="./Images/Moyens de paiement.png" alt="payment-methods">
-            <div class="up flex">
-                <p>Retour en haut</p>
-                <i class="fas fa-light fa-arrow-up"></i>
+            <p class="other-payments-p">Vous pouvez également réaliser ce paiement avec :</p>
+            <div class="other-payments flex">
+                <a href="#"><img src="./Images/payment/GooglePay.png" alt="google pay"></a>
+                <a href="#"><img src="./Images/payment/ApplePay.png" alt="apple pay"></a>
+                <a href="#"><img src="./Images/payment/PayPal.png" alt="paypal"></a>
+                <a href="#"><img src="./Images/payment/Bitcoin.png" alt="bitcoin"></a>
+                <a href="#"><img src="./Images/payment/AmazonPay.png" alt="amazon pay"></a>
             </div>
-    
-        </footer>
-    
-        <script src="./JS/main.js"></script>
-    </body>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <section id="pre-footer" class="flex">
+        <div class="garanty-box flex column">
+            <i class="fas fa-light fa-truck-fast"></i>
+            <h3>expédition rapide</h3>
+            <p>Après avoir passé commande, l'expédition de votre commande se fait sous 2 à 3 jours ouvrés</p>
+        </div>
+        <div class="garanty-box flex column">
+            <i class="fas fa-light fa-headset"></i>
+            <h3>service client</h3>
+            <p>Notre service client est à votre écoute 5 jours sur 7 pour toute demande d'information</p>
+        </div>
+        <div class="garanty-box flex column">
+            <i class="fas fa-light fa-credit-card"></i>
+            <h3>paiement sécurisé</h3>
+            <p>Le paiement de votre commande est sécurisé</p>
+        </div>
+        </div>
+    </section>
+    <footer class="flex column">
+        <div class="footer-one flex">
+            <nav class="footer-links flex column">
+                <a href="#">Nous contacter</a>
+                <a href="#">Mentions légales</a>
+                <a href="#">Conditions générales d'utilisation</a>
+                <a href="#">Conditions générales de vente</a>
+                <a href="#">Service client</a>
+            </nav>
+            <div class="newsletter flex column">
+                <h3>Newsletter</h3>
+                <p>Inscrivez-vous à notre newsletter pour recevoir toutes les informations et les bons plans par mail
+                </p>
+                <form class="newsletter-form flex column" action="">
+                    <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input class="submit-button" type="submit" value="Je m'inscris">
+                </form>
+            </div>
+        </div>
+        <div class="social-medias flex">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+        </div>
+        <img class="payment-methods" src="./Images/Moyens de paiement.png" alt="payment-methods">
+        <div class="up flex">
+            <p>Retour en haut</p>
+            <i class="fas fa-light fa-arrow-up"></i>
+        </div>
+
+    </footer>
+
+    <script src="./JS/main.js"></script>
+</body>
 
 </html>
