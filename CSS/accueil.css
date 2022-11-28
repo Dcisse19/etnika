@@ -2,12 +2,6 @@
 /* ------ GRID ------ */
 
 
-
-
-.main-grid img{
-    /* position: relative; */
-}
-
 .main-grid {
     display: grid;
     justify-content: center;
@@ -19,19 +13,16 @@
     color: var(--color-white);
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: clamp(24px,3vw,45px);
-    /* transform: translatey(-200px); */
+    font-size: clamp(17px,4vw,40px);
 }
 
 .region a{
     background-color: var(--color-white);
     padding: 10px 20px;
-    font-size: clamp(5px,3vw,15px);
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-size: clamp(5px,2vw,15px);
     font-weight: 500;
-    /* position: absolute; */
-    /* transform: translateY(200%); */
 }
 
 
@@ -39,12 +30,6 @@
     background-color: var(--color-red);
     color: var(--color-white);
 }
-/* .region-text{
-    position: absolute;
-    top: 50%;
-    /* left: 50%; 
-} */
-
 
 .region img{
     width: 100%;
@@ -58,7 +43,7 @@
     grid-column: 1/3;
     grid-row: 1;
     background: var(--color-red);
-    gap: 30px;
+    gap: 20px;
     padding: 35px 50px;
     color: var(--color-white);
     flex-wrap: wrap-reverse;
@@ -83,10 +68,11 @@
     gap: 40px;
 }
 h1{
+    font-size: clamp(30px,4vw,40px);
     font-weight: 600;
 }
 .banner h2{
-    font-size: clamp(18px,3vw,22px);
+    font-size: clamp(16px,3vw,22px);
     font-weight: 400;
     line-height: 40px;
 }
@@ -96,22 +82,20 @@ h1{
 
 .region-text{
     align-items: center;
-    gap: 25px;
+    gap: 20px;
+    text-align: center;
 }
 /* ------- AFRICA SECTION -------- */
 
 .africa {
     grid-column: 1;
     grid-row: 2;
-    /* justify-content: center; */
 }
 
-.africa h3{
-    transform: translateY(-500%);
+.africa .region-text{
+    transform: translateY(-200px);
 }
-.africa a{
-    transform: translateY(-400%);
-}
+
 
 .america {
     grid-column: 2;
@@ -120,25 +104,24 @@ h1{
     align-items: flex-start;
 }
 
+.america .region-text{
+    transform: translateY(-200px);
+}
+
 .asia {
     grid-column: 2;
     grid-row: 3/6;
     justify-content: center;
 }
 
-/* .asia h3{
-    color: black;
-}
 
-.asia a{
-    background: var(--color-red);
-    color: white;
+.asia .region-text{
+    padding: 20px 0px;
+    transform: translateY(-400px);
+    background-color: rgba(28, 28, 28, 0.248);
+    width: min(230px,70%);
+    margin: auto;
 }
-.asia a:hover{
-    background: var(--color-white);
-    color: black;
-} */
-
 
 .europe {
 
@@ -146,6 +129,10 @@ h1{
     grid-row: 4/7;
     align-items: flex-end;
     justify-content: center;
+}
+
+.europe .region-text{
+    transform: translateY(-500px);
 }
 
 .value{
@@ -220,12 +207,53 @@ h1{
     color: var(--color-white);
 }
 
+@media(max-width: 1020px){
+    .europe .region-text{
+        transform: translateY(-400px);
+    }
+}
+
 @media (max-width: 1008px){
     .testimony-1, .testimony-2{
         display: none;
     }
 }
 
+@media(max-width: 830px){
+    .asia .region-text{
+        transform: translateY(-250px);
+        gap: 15px;
+    }
+}
+
+@media(max-width: 790px){
+    .europe .region-text{
+        transform: translateY(-350px);
+    }
+}
+@media(max-width: 730px){
+    .africa .region-text{
+        transform: translateY(-150px);
+    }
+
+    .america .region-text{
+        transform: translateY(-150px);
+    }
+}
+
+@media(max-width: 650px){
+    .europe .region-text{
+        transform: translateY(-300px);
+    }
+}
+
+@media(max-width: 570px){
+    .europe .region-text{
+        transform: translateY(-250px);
+    }
+    .region a{
+        padding: 7px 12px;
+}
 @media (max-width: 565px){
     .value{
         padding: 20px;
@@ -245,6 +273,28 @@ h1{
     }
 }
 
+
+@media(max-width: 480px){
+    .europe .region-text{
+        transform: translateY(-200px);
+    }
+}
+
+@media(max-width: 460px){
+    .asia .region-text{
+        transform: translateY(-200px);
+        padding: 15px 5px;
+    }
+    .left-arrow, .right-arrow{
+        width: 20px;
+    }
+    .left-arrow{
+        transform: translateX(20px);
+    }
+    .right-arrow{
+        transform: translateX(-20px);
+    }
+}
 @media(max-width: 430px){
     .banner{
         padding: 25px 30px;

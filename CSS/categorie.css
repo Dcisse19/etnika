@@ -74,23 +74,15 @@ h1{
 }
 
 .product-box{
-    /* width: min(230px,100%); */
     gap: 15px;
     font-weight: 400;
-    /* justify-content: space-between; */
-    /* border: 1px solid var(--color-red); */
     text-align: center;
 }
 
-/* .product-photo{
-    /* width: min(230px,100%); 
-} */
+
 .product-name{
     gap: 10px;
 }
 .product-name *{
     font-size: clamp(15px,3vw,18px);
 }
-/* .product-name:nth-child(2){
-    /* font-weight: 600; 
-} */
